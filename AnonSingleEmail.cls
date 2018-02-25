@@ -20,6 +20,6 @@ if (results[0].success) {
 }
 
 /* USER_DEBUG
-22:14:35.1 (28159755)|USER_DEBUG|[10]|DEBUG|(Messaging.SendEmailResult[getErrors=();isSuccess=true;])
-22:14:35.1 (28320380)|USER_DEBUG|[12]|DEBUG|The email was sent successfully.
+22:40:59.1 (58131916)|USER_DEBUG|[10]|DEBUG|(Messaging.SendEmailResult[getErrors=();isSuccess=true;])
+22:40:59.1 (58290317)|USER_DEBUG|[12]|DEBUG|The email was sent successfully.
 */
