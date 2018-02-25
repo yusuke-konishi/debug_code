@@ -1,6 +1,6 @@
-/* REFERENCE
+/* v42.0
 HttpResponse Class | Apex Developer Guide | Salesforce Developers
-https://developer.salesforce.com/docs/atlas.en-us.apexcode.meta/apexcode/apex_classes_restful_http_httpresponse.htm
+https://developer.salesforce.com/docs/atlas.en-us.212.0.apexcode.meta/apexcode/apex_classes_restful_http_httpresponse.htm
 */
 
 Http http = new Http();
