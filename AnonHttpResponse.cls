@@ -12,9 +12,10 @@ HttpResponse res = http.send(req);
 System.debug('Status: ' + res.getStatus());
 System.debug('StatusCode: ' + res.getStatusCode());
 System.debug('Body: ' + res.getBody());
-System.debug('HeaderKeys: ' + res.getHeaderKeys());
 
-for(String key: res.getHeaderKeys()) {
+String[] keys = res.getHeaderKeys();
+System.debug('HeaderKeys: ' + keys);
+for(String key: keys) {
     System.debug(key + ': ' + res.getHeader(key));
 }
 
