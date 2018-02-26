@@ -8,7 +8,7 @@ Messaging.SingleEmailMessage message = new Messaging.SingleEmailMessage();
 message.toAddresses = new String[] { 'EMAIL_ADDRESS' };
 message.subject = 'Opt Out Test Message';
 message.plainTextBody = 'This is the message body.';
-message.setOrgWideEmailAddressId('ORG_WIDE_EMAIL_ADDRESS_RECORD_ID'); // set OrgWideEmailAddress to from address
+message.setOrgWideEmailAddressId('ORG_WIDE_EMAIL_ADDRESS_RECORD_ID'); // set OrgWideEmailAddress to sender address
 message.setTargetObjectId('CONTACT_RECORD_ID'); // associate email with contact's activity
 
 Messaging.SingleEmailMessage[] messages = new Messaging.SingleEmailMessage[] {message};

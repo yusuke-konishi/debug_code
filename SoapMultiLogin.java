@@ -35,16 +35,16 @@ public class SoapMultiLogin {
 
 /* Console
 UserName: USERNAME
-SessionID: SESSION_ID
+SessionID: SESSION_ID_#1
 SOAP Login #1: 2018-02-26T23:20:51.859
 UserName: USERNAME
-SessionID: SESSION_ID
+SessionID: SESSION_ID_#2
 SOAP Login #2: 2018-02-26T23:20:53.984
 UserName: USERNAME
-SessionID: SESSION_ID
+SessionID: SESSION_ID_#3
 SOAP Login #3: 2018-02-26T23:20:56.645
 ...
 UserName: USERNAME
-SessionID: SESSION_ID
+SessionID: SESSION_ID_#10
 SOAP Login #10: 2018-02-26T23:21:15.123
 */
