@@ -1,4 +1,4 @@
-/* v42.0
+/* Spring '18, v42.0
 SingleEmailMessage Methods | Apex Developer Guide | Salesforce Developers
 https://developer.salesforce.com/docs/atlas.en-us.212.0.apexcode.meta/apexcode/apex_classes_email_outbound_single.htm
 */
