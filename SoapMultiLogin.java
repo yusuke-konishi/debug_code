@@ -10,27 +10,27 @@ import com.sforce.ws.ConnectorConfig;
 import java.time.LocalDateTime;
 
 public class SoapMultiLogin {
-	public static void main(String[] args) {
-		for (int i = 1; i <= 10; i++) {
-			try {
-				ConnectorConfig config = new ConnectorConfig();
-				config.setUsername("USERNAME");
-				config.setPassword("PASSWORD");
-				config.setAuthEndpoint("https://login.salesforce.com/services/Soap/c/24.0/");
-				
-				EnterpriseConnection connection = new EnterpriseConnection(config);
-				
-				GetUserInfoResult userInfo = connection.getUserInfo();
-				System.out.println("UserName: " + userInfo.getUserName());
-				System.out.println("SessionID: " + config.getSessionId());
-				
-				connection.logout();
-			} catch (ConnectionException ce) {
-				ce.printStackTrace();
-			}
-		System.out.println("SOAP Login #" + i + ": " + LocalDateTime.now());
-		}
-	}
+    public static void main(String[] args) {
+        for (int i = 1; i <= 10; i++) {
+            try {
+                ConnectorConfig config = new ConnectorConfig();
+                config.setUsername("USERNAME");
+                config.setPassword("PASSWORD");
+                config.setAuthEndpoint("https://login.salesforce.com/services/Soap/c/24.0/");
+
+                EnterpriseConnection connection = new EnterpriseConnection(config);
+
+                GetUserInfoResult userInfo = connection.getUserInfo();
+                System.out.println("UserName: " + userInfo.getUserName());
+                System.out.println("SessionID: " + config.getSessionId());
+
+                connection.logout();
+            } catch (ConnectionException ce) {
+                ce.printStackTrace();
+            }
+            System.out.println("SOAP Login #" + i + ": " + LocalDateTime.now());
+        }
+    }
 }
 
 /* Console
