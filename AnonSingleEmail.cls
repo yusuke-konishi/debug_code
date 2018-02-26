@@ -5,7 +5,7 @@ https://developer.salesforce.com/docs/atlas.en-us.212.0.apexcode.meta/apexcode/a
 
 Messaging.SingleEmailMessage message = new Messaging.SingleEmailMessage();
 
-message.toAddresses = new String[] { 'address01@example.com', 'address02@example.com' };
+message.toAddresses = new String[] { 'EMAIL_ADDRESS' };
 message.subject = 'Opt Out Test Message';
 message.plainTextBody = 'This is the message body.';
 
