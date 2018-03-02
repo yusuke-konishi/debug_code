@@ -1,0 +1,23 @@
+<!-- Spring '18, v42.0
+apex:pageBlockButtons | Visualforce Developer Guide | Salesforce Developers
+https://developer.salesforce.com/docs/atlas.en-us.212.0.pages.meta/pages/pages_compref_pageBlockButtons.htm
+
+Navigation with the sforce.one Object | Salesforce App Developer Guide | Salesforce Developers
+https://developer.salesforce.com/docs/atlas.en-us.212.0.salesforce1.meta/salesforce1/salesforce1_dev_jsapi_sforce_one.htm
+-->
+
+<apex:page>
+    <apex:form>
+        <apex:pageBlock title="MyObject">
+            <apex:pageBlockButtons location="top">
+                <apex:commandButton onclick="newMyObject()" value="New"/>
+            </apex:pageBlockButtons>
+        </apex:pageBlock>
+    </apex:form>
+    
+    <script>
+        function newMyObject(){
+            sforce.one.createRecord('MyObject__c');
+        }
+    </script>
+</apex:page>
