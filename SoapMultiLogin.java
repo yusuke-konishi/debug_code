@@ -18,13 +18,13 @@ public class SoapMultiLogin {
                 config.setPassword("PASSWORD");
                 config.setAuthEndpoint("https://login.salesforce.com/services/Soap/c/24.0/");
 
-                EnterpriseConnection connection = new EnterpriseConnection(config);
+                EnterpriseConnection connection = new EnterpriseConnection(config); // API Call +1
 
-                GetUserInfoResult userInfo = connection.getUserInfo();
+                GetUserInfoResult userInfo = connection.getUserInfo(); // API Call +1
                 System.out.println("UserName: " + userInfo.getUserName());
                 System.out.println("SessionID: " + config.getSessionId());
 
-                connection.logout();
+                connection.logout(); // API Call +1
             } catch (ConnectionException ce) {
                 ce.printStackTrace();
             }
