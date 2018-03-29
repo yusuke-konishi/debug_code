@@ -1,0 +1,17 @@
+<!-- Spring '18, v42.0
+apex:outputLink | Visualforce Developer Guide | Salesforce Developers
+https://developer.salesforce.com/docs/atlas.en-us.212.0.pages.meta/pages/pages_compref_outputLink.htm
+
+apex:pageBlock | Visualforce Developer Guide | Salesforce Developers
+https://developer.salesforce.com/docs/atlas.en-us.212.0.pages.meta/pages/pages_compref_pageBlock.htm
+-->
+
+<apex:page>
+    <apex:form>
+        <apex:pageBlock title="MyLink">
+            <apex:outputLink value="https://www.salesforce.com" id="theLink">www.salesforce.com</apex:outputLink>
+            <br />
+            <apex:outputLink value="/one/one.app#/setup/SetupOneHome/home" target="_blank">Setup</apex:outputLink>
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>
