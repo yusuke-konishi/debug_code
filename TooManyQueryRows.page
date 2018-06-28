@@ -1,0 +1,15 @@
+<!-- Summer '18, v43.0
+Building a Controller Extension | Visualforce Developer Guide | Salesforce Developers
+https://developer.salesforce.com/docs/atlas.en-us.214.0.pages.meta/pages/pages_controller_extension.htm
+-->
+
+<apex:page standardController="Account" extensions="myControllerExtension">
+    {!soql}
+</apex:page>
+
+<!--
+Visualforce Error
+
+System.LimitException: Too many query rows: 50001
+Class.myControllerExtension.getSoql: line 15, column 1
+-->
