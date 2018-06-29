@@ -4,12 +4,12 @@ https://developer.salesforce.com/docs/atlas.en-us.214.0.pages.meta/pages/pages_c
 -->
 
 <apex:page standardController="Account" extensions="myControllerExtension">
-    {!soql}
+    {!AcctList}
 </apex:page>
 
 <!--
 Visualforce Error
 
 System.LimitException: Too many query rows: 50001
-Class.myControllerExtension.getSoql: line 15, column 1
+Class.myControllerExtension.getAcctList: line 15, column 1
 -->

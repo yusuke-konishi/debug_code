@@ -11,7 +11,7 @@ public with sharing class myControllerExtension {
         this.acct = (Account)stdController.getRecord();
     }
 
-    public List<Account> getSoql() {
+    public List<Account> getAcctList() {
         return [SELECT Id, Name FROM Account];
     }
 }
